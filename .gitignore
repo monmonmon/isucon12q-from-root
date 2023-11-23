@@ -1,0 +1,42 @@
+*.swp
+
+/bin
+/boot
+/dev
+/lib*
+/lost+found
+/media
+/mnt
+/opt
+/proc
+/root
+/run
+/sbin
+/snap
+/srv
+/sys
+/tmp
+/usr
+/var
+
+# etc
+/etc/*
+!/etc/nginx
+!/etc/mysql
+
+# home
+/home/ubuntu
+/home/isucon/*
+!/home/isucon/webapp
+#!/home/isucon/data
+#!/home/isucon/initial_data
+#!/home/isucon/public
+
+# /home/isucon/webapp
+/home/isucon/webapp/java
+/home/isucon/webapp/node
+/home/isucon/webapp/perl
+/home/isucon/webapp/php
+/home/isucon/webapp/python
+/home/isucon/webapp/ruby
+/home/isucon/webapp/rust
