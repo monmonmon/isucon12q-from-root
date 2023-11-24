@@ -4,7 +4,7 @@
 # You can copy this to one of:
 # - "/etc/mysql/my.cnf" to set global options,
 # - "~/.my.cnf" to set user-specific options.
-# 
+#
 # One can use all long options that the program supports.
 # Run program with --help to get a list of available options and with
 # --print-defaults to see which it would actually understand and use.
@@ -19,3 +19,29 @@
 
 !includedir /etc/mysql/conf.d/
 !includedir /etc/mysql/mysql.conf.d/
+
+
+[mysqld]
+# スロークエリログ
+slow_query_log = ON
+slow_query_log_file = /var/log/mysql/mysql-slow.log
+long_query_time = 0
+
+# 接続数上限 (default 151)
+max_connections = 1000
+
+# InnoDB Buffer Poolを増加：DB専用サーバなら物理メモリの80%程度 (default 128MB)
+innodb_buffer_pool_size = 1073741824 # 1024^3 = 1GB
+# OSによるディスクキャッシュ防止。InnoDB Buffer Poolと2重キャッシュにならないようにする
+innodb_flush_method = O_DIRECT
+
+# 更新データをREDOログに書いてディスクにフラッシュする挙動を指定
+# 0: ログは 1 秒に 1 回書き込まれ、ディスクにフラッシュされます
+# 1: ログは、トランザクションのコミットごとにディスクに書き込まれ、フラッシュされます（デフォルト）
+# 2: 各トランザクションのコミット後にログが書き込まれ、1 秒に 1 回ディスクにフラッシュされます
+innodb_flush_log_at_trx_commit = 2
+
+# バイナリログを無効化（レプリケーションが不要な場合）
+disable-log-bin = 1
+# バイナリログ書き込み実行するコミット数を指定（デフォルト1）。大きい数を指定してI/O処理を軽減
+#sync_binlog = 100
