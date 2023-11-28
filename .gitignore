@@ -3,7 +3,10 @@
 /bin
 /boot
 /dev
-/lib*
+/lib
+/lib32
+/lib64
+/libx32
 /lost+found
 /media
 /mnt
@@ -16,7 +19,6 @@
 /srv
 /sys
 /tmp
-/usr
 /var
 
 # etc
@@ -24,21 +26,35 @@
 !/etc/nginx
 !/etc/mysql
 
+# systemd
+/usr/*
+!/usr/lib
+/usr/lib/*
+!/usr/lib/systemd
+/usr/lib/systemd/*
+!/usr/lib/systemd/system
+/usr/lib/systemd/system/*
+!/usr/lib/systemd/system/mysql.service
+!/usr/lib/systemd/system/nginx.service
+
+!/etc/systemd
+/etc/systemd/*
+!/etc/systemd/system
+/etc/systemd/system/*
+!/etc/systemd/system/isuports.service
+
 # home
-/home/ubuntu
+/home/*
+!/home/isucon
 /home/isucon/*
 !/home/isucon/webapp
-#!/home/isucon/data
-#!/home/isucon/initial_data
-#!/home/isucon/public
 
-# /home/isucon/webapp
-/home/isucon/webapp/java
-/home/isucon/webapp/node
-/home/isucon/webapp/perl
-/home/isucon/webapp/php
-/home/isucon/webapp/python
-/home/isucon/webapp/ruby
-/home/isucon/webapp/rust
-
+# webapp
+/home/isucon/webapp/*
+!/home/isucon/webapp/docker-compose-go.yml
+!/home/isucon/webapp/specification.md
+!/home/isucon/webapp/go
+!/home/isucon/webapp/img
+!/home/isucon/webapp/sql
+!/home/isucon/webapp/tenant_db
 /home/isucon/webapp/go/isuports
