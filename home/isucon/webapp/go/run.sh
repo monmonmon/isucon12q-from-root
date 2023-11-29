@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
 
-# タイムスタンプを付けてecho
+# タイムスタンプ付きでecho
 say() {
-    echo "$(date +%R:%S) ${*}"
+    echo
+    echo "[$(date +%R:%S)] ${*}"
 }
-
-# コマンドライン引数として今回の変更に関するコメントを渡すこと
-if [ $# -eq 0 ]; then
-    echo "Usage: $(basename $0) コメント"
-    exit 1
-fi
 
 # コマンドが異常終了したら即終了
 set -e
@@ -19,7 +14,7 @@ cd $(dirname $0)
 
 # goの文法チェック
 go vet
-# ミドルウェアの設定ファイルチェック
+# ミドルウェアの設定ファイルの文法チェック
 sudo nginx -t
 sudo mysqld --validate-config
 
@@ -34,33 +29,40 @@ sudo systemctl restart isuports nginx mysql
 sleep 1.5
 curl -XPOST http://127.0.0.1:3000/initialize
 
-# 解析結果の出力先のファイル名
-output=$PWD/bench-$(date +'%Y%m%d%H%M%S').txt
+# 解析結果の出力先ディレクトリを準備
+mkdir -p /results
+rm -f /results/*
 
-# 今回の変更に関するコメントをファイルに出力
-echo "$*" >> $output
-echo >> $output
-
-# ベンチ実行
-echo ">> benchmark" >> $output
+# ベンチをバックグラウンドで実行
+say 'benchmark'
 (
     cd /home/isucon/bench
-    2>&1 ./bench -target-addr 127.0.0.1:443 | tee -a $output
-    echo >> $output
-)
+    2>&1 ./bench -target-addr 127.0.0.1:443 | tee /results/bench.txt
+) &
+bench_pid=$!
+
+# topで計測開始
+setsid sh -c 'top -b -d1 | grep --line-buffered -w PID -A8 > /results/top.txt' &
+top_pid=$!
+top_pgid=$(ps -o pgid= $top_pid | tr -d ' ')
+# dstatで計測開始
+dstat -tlamp > /results/dstat.txt &
+dstat_pid=$!
+# ベンチの終了を待機
+wait $bench_pid
+# top, dstat をプロセスグループごとkill
+kill -SIGTERM -$top_pgid $dstat_pid
 
 # alpでアクセスログを解析
-echo ">> alp" >> $output
+say 'alp'
 alp ltsv --file /var/log/nginx/access.log --sort sum -r \
     -o method,uri,sum,count,min,max,avg \
     -m '/api/player/competition/[0-9a-f]+/ranking,/api/organizer/competition/[0-9a-f]+/score,/api/player/player/[0-9a-f]+,/api/organizer/player/[0-9a-f]+/disqualified,/api/organizer/competition/[0-9a-f]+/finish' \
-    | tee -a $output
-echo >> $output
+    | tee /results/alp.txt
 
 # pt-query-digestでスロークエリログを解析
-echo ">> pt-query-digest" >> $output
-sudo pt-query-digest /var/log/mysql/mysql-slow.log | tee -a $output
+say 'pt-query-digest'
+sudo pt-query-digest --explain 'h=localhost,u=isucon,p=isucon,D=isuports' /var/log/mysql/mysql-slow.log \
+    | tee /results/slow-query.txt
 
-# 解析結果ファイルをlessで開く
-echo $output
-exec less $output
+say 'done'

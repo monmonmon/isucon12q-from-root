@@ -1,0 +1,739 @@
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 215080 isucon    20   0 1160096  20476   9900 S  53.3   0.3   0:00.08 bench
+ 214853 mysql     20   0 3184468 700784  37036 S  40.0   8.6   0:03.84 mysqld
+ 215093 isucon    20   0   26368  17448   6160 S  26.7   0.2   0:00.04 dstat
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3184468 701240  37100 S 100.0   8.6   0:04.84 mysqld
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.14 netdata
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3184468 701768  37100 S 100.0   8.6   0:05.85 mysqld
+  35023 redis     20   0   68252  11228   9132 S   1.0   0.1  13:51.78 redis-server
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.19 apps.plugin
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3451760 706012  37420 S  57.0   8.7   0:06.42 mysqld
+ 215080 isucon    20   0 1160864  20576  10984 S  26.0   0.3   0:00.34 bench
+ 215058 isucon    20   0 1231364  16056  10500 S   6.0   0.2   0:00.06 main
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.15 netdata
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.20 apps.plugin
+ 214735 www-data  20   0   57904  11248   7488 S   1.0   0.1   0:00.01 nginx
+ 215085 isucon    20   0   11524   3960   3352 R   1.0   0.0   0:00.01 top
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3583868 708652  37420 S  84.2   8.7   0:07.27 mysqld
+ 215058 isucon    20   0 1305928  19052  10628 D  20.8   0.2   0:00.27 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.39 jbd2/vda1-8
+    118 root       0 -20       0      0      0 I   1.0   0.0   0:03.34 kworker/3:1H-kblockd
+  37835 isucon    20   0   29820  23452   3236 S   1.0   0.3   0:19.65 tmux: server
+  51153 isucon    20   0   92960  30684  29748 S   1.0   0.4   0:02.21 journalctl
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.16 netdata
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.21 apps.plugin
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3582840 709400  37420 S  98.0   8.7   0:08.25 mysqld
+ 215058 isucon    20   0 1379980  18688  10628 S  22.0   0.2   0:00.49 main
+ 215080 isucon    20   0 1160864  20616  10984 S   3.0   0.3   0:00.38 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.41 jbd2/vda1-8
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.54 kworker/1:1H-kblockd
+   4738 root      20   0 1765088 108368  60640 S   1.0   1.3   1:46.20 dockerd
+  22057 root      19  -1  166712  98052  96852 S   1.0   1.2   0:19.62 systemd-journal
+  35023 redis     20   0   68252  11216   9132 S   1.0   0.1  13:51.79 redis-server
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3649408 711512  37420 S  91.1   8.7   0:09.17 mysqld
+ 215058 isucon    20   0 1527460  20804  10628 S  23.8   0.3   0:00.73 main
+    306 root      20   0       0      0      0 R   2.0   0.0   0:27.43 jbd2/vda1-8
+  24804 syslog    20   0  222400   5120   4096 S   1.0   0.1   0:05.22 rsyslogd
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.18 netdata
+ 214164 root      20   0       0      0      0 I   1.0   0.0   0:00.03 kworker/u8:3-events_unbound
+ 214735 www-data  20   0   58228  11248   7488 S   1.0   0.1   0:00.02 nginx
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 215058 isucon    20   0 1527460  20424  10728 S  28.7   0.3   0:01.02 main
+ 214853 mysql     20   0 3649408 711512  37420 S  20.8   8.7   0:09.38 mysqld
+    306 root      20   0       0      0      0 S   7.9   0.0   0:27.51 jbd2/vda1-8
+ 113305 netdata   20   0   54384   5028   1980 S   3.0   0.1   7:50.24 apps.plugin
+ 214766 root      20   0       0      0      0 I   3.0   0.0   0:00.03 kworker/u8:4-writeback
+ 215080 isucon    20   0 1160864  21844  10984 S   3.0   0.3   0:00.41 bench
+  37835 isucon    20   0   29792  23424   3236 S   2.0   0.3   0:19.67 tmux: server
+ 113094 netdata   20   0  356272 124152   8592 S   2.0   1.5   8:22.20 netdata
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 215058 isucon    20   0 1527460  20424  10728 S   9.0   0.3   0:01.11 main
+ 214853 mysql     20   0 3649408 711512  37420 S   6.0   8.7   0:09.44 mysqld
+    306 root      20   0       0      0      0 D   3.0   0.0   0:27.54 jbd2/vda1-8
+ 214766 root      20   0       0      0      0 R   3.0   0.0   0:00.06 kworker/u8:4-ext4-rsv-conversion
+ 113094 netdata   20   0  356272 124152   8592 S   2.0   1.5   8:22.22 netdata
+     13 root      20   0       0      0      0 I   1.0   0.0   2:02.07 rcu_sched
+    118 root       0 -20       0      0      0 I   1.0   0.0   0:03.36 kworker/3:1H-kblockd
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.55 kworker/1:1H-kblockd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 215058 isucon    20   0 1527460  20680  10728 S   7.9   0.3   0:01.19 main
+    306 root      20   0       0      0      0 S   2.0   0.0   0:27.56 jbd2/vda1-8
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.23 netdata
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.25 apps.plugin
+ 113306 netdata   20   0   72376  33544  10388 S   1.0   0.4   1:02.18 python.d.plugin
+ 215085 isucon    20   0   11524   3960   3352 R   1.0   0.0   0:00.04 top
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3649408 713360  37420 S  23.0   8.8   0:09.67 mysqld
+ 215058 isucon    20   0 1527460  22528  10728 S   6.0   0.3   0:01.25 main
+ 215080 isucon    20   0 1160864  22096  10984 S   2.0   0.3   0:00.43 bench
+    118 root       0 -20       0      0      0 I   1.0   0.0   0:03.37 kworker/3:1H-kblockd
+    306 root      20   0       0      0      0 S   1.0   0.0   0:27.57 jbd2/vda1-8
+ 212310 netdata   20   0    4624   3392   2924 S   1.0   0.0   0:01.46 bash
+ 215085 isucon    20   0   11524   3960   3352 R   1.0   0.0   0:00.05 top
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3649408 714680  37420 S  88.1   8.8   0:10.56 mysqld
+ 215058 isucon    20   0 1529044  21772  10728 S   9.9   0.3   0:01.35 main
+ 113094 netdata   20   0  356272 124152   8592 S   2.0   1.5   8:22.25 netdata
+  37835 isucon    20   0   29792  23424   3236 S   1.0   0.3   0:19.68 tmux: server
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.26 apps.plugin
+ 175292 root      20   0       0      0      0 I   1.0   0.0   0:01.48 kworker/0:1-ata_sff
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3649408 717056  37420 S  89.0   8.8   0:11.45 mysqld
+ 215058 isucon    20   0 1529044  21804  10728 S  11.0   0.3   0:01.46 main
+ 212310 netdata   20   0    4624   3392   2924 S   1.0   0.0   0:01.47 bash
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3649408 717848  37420 S  89.1   8.8   0:12.35 mysqld
+ 215058 isucon    20   0 1527460  22160  10728 S  11.9   0.3   0:01.58 main
+ 113305 netdata   20   0   54384   5028   1980 S   2.0   0.1   7:50.28 apps.plugin
+ 214780 isucon    20   0  729572  33132  22428 S   1.0   0.4   0:00.16 docker-compose
+ 215085 isucon    20   0   11524   3960   3352 R   1.0   0.0   0:00.06 top
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852332 720252  37420 S 156.0   8.8   0:13.91 mysqld
+ 215058 isucon    20   0 2264952  27960  10728 S  28.0   0.3   0:01.86 main
+ 215080 isucon    20   0 1161120  21576  11240 S   7.0   0.3   0:00.50 bench
+    306 root      20   0       0      0      0 R   1.0   0.0   0:27.58 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.22 dockerd
+  35023 redis     20   0   68252  11180   9132 S   1.0   0.1  13:51.80 redis-server
+  51153 isucon    20   0   92960  30684  29748 S   1.0   0.4   0:02.22 journalctl
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.26 netdata
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852332 721812  37420 S 161.4   8.9   0:15.54 mysqld
+ 215058 isucon    20   0 2265208  28364  10728 S  38.6   0.3   0:02.25 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.60 jbd2/vda1-8
+     13 root      20   0       0      0      0 I   1.0   0.0   2:02.08 rcu_sched
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.56 kworker/1:1H-kblockd
+  22057 root      19  -1  166712  98096  96896 S   1.0   1.2   0:19.63 systemd-journal
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.27 netdata
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.29 apps.plugin
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852480 724108  37420 S 169.0   8.9   0:17.23 mysqld
+ 215058 isucon    20   0 2265208  32132  10728 S  30.0   0.4   0:02.55 main
+    306 root      20   0       0      0      0 D   3.0   0.0   0:27.63 jbd2/vda1-8
+     26 root      20   0       0      0      0 S   1.0   0.0   0:00.76 ksoftirqd/2
+   4463 root      20   0 1432684  50628  34752 S   1.0   0.6   5:08.82 containerd
+  22057 root      19  -1  166712  98096  96896 S   1.0   1.2   0:19.64 systemd-journal
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.28 netdata
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.30 apps.plugin
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3851452 726000  37420 S 185.1   8.9   0:19.10 mysqld
+ 215058 isucon    20   0 2265036  41796  10728 S  76.2   0.5   0:03.32 main
+ 215080 isucon    20   0 1161376  24232  11304 S   6.9   0.3   0:00.58 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.65 jbd2/vda1-8
+ 214735 www-data  20   0   58228  11644   7640 S   2.0   0.1   0:00.06 nginx
+    101 root       0 -20       0      0      0 R   1.0   0.0   0:03.27 kworker/0:1H+kblockd
+  24804 syslog    20   0  222400   5120   4096 S   1.0   0.1   0:05.23 rsyslogd
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.29 netdata
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852480 727092  37420 S 168.0   8.9   0:20.78 mysqld
+ 215058 isucon    20   0 2265036  41756  10728 S  45.0   0.5   0:03.77 main
+ 215080 isucon    20   0 1161376  25524  11304 S  13.0   0.3   0:00.71 bench
+ 214735 www-data  20   0   58776  12172   7640 S   4.0   0.1   0:00.10 nginx
+    101 root       0 -20       0      0      0 I   1.0   0.0   0:03.28 kworker/0:1H-kblockd
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.24 kworker/2:1H-kblockd
+    306 root      20   0       0      0      0 D   1.0   0.0   0:27.66 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.23 dockerd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853508 730452  37420 S 224.8   9.0   0:23.05 mysqld
+ 215058 isucon    20   0 2265036  38896  10728 S  73.3   0.5   0:04.51 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.68 jbd2/vda1-8
+ 215080 isucon    20   0 1161376  25524  11304 S   2.0   0.3   0:00.73 bench
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.24 dockerd
+  22057 root      19  -1  166712  98160  96960 S   1.0   1.2   0:19.65 systemd-journal
+  37835 isucon    20   0   29804  23424   3236 S   1.0   0.3   0:19.69 tmux: server
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.30 netdata
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3850424 732984  37420 S 156.0   9.0   0:24.61 mysqld
+ 215058 isucon    20   0 3018748  38392  10728 D  54.0   0.5   0:05.05 main
+ 215080 isucon    20   0 1161376  26308  11304 S   7.0   0.3   0:00.80 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.70 jbd2/vda1-8
+ 214737 www-data  20   0   58576  11652   7640 S   2.0   0.1   0:00.04 nginx
+    118 root       0 -20       0      0      0 I   1.0   0.0   0:03.38 kworker/3:1H-kblockd
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.33 apps.plugin
+ 113306 netdata   20   0   72376  33544  10388 S   1.0   0.4   1:02.19 python.d.plugin
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3851452 734384  37420 S  79.2   9.0   0:25.41 mysqld
+ 215058 isucon    20   0 3018748  40836  10728 S  24.8   0.5   0:05.30 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.72 jbd2/vda1-8
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.57 kworker/1:1H-kblockd
+  22057 root      19  -1  166712  98208  97008 S   1.0   1.2   0:19.66 systemd-journal
+  24804 syslog    20   0  222400   5120   4096 S   1.0   0.1   0:05.24 rsyslogd
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.31 netdata
+ 215080 isucon    20   0 1161376  27088  11304 S   1.0   0.3   0:00.81 bench
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3850424 736320  37420 S  79.0   9.0   0:26.20 mysqld
+ 215058 isucon    20   0 3018748  43164  10792 S  31.0   0.5   0:05.61 main
+ 215080 isucon    20   0 1161376  28104  11304 S   7.0   0.3   0:00.88 bench
+    306 root      20   0       0      0      0 S   1.0   0.0   0:27.73 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.25 dockerd
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.34 apps.plugin
+ 214734 www-data  20   0   58228  11644   7640 S   1.0   0.1   0:00.03 nginx
+ 214737 www-data  20   0   58576  11916   7640 S   1.0   0.1   0:00.05 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852484 738828  37420 S 114.9   9.1   0:27.36 mysqld
+ 215058 isucon    20   0 3035140  44700  10856 S  57.4   0.5   0:06.19 main
+ 215080 isucon    20   0 1161376  28584  11304 S   5.0   0.4   0:00.93 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.75 jbd2/vda1-8
+ 113094 netdata   20   0  356272 124152   8592 S   2.0   1.5   8:22.33 netdata
+ 214736 www-data  20   0   58500  11648   7640 S   2.0   0.1   0:00.04 nginx
+    101 root       0 -20       0      0      0 I   1.0   0.0   0:03.29 kworker/0:1H-kblockd
+  22057 root      19  -1  166712  98324  97124 S   1.0   1.2   0:19.67 systemd-journal
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852484 739620  37420 S  94.0   9.1   0:28.30 mysqld
+ 215058 isucon    20   0 3076120  44408  10856 D  24.0   0.5   0:06.43 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.77 jbd2/vda1-8
+ 215080 isucon    20   0 1161376  28844  11304 S   2.0   0.4   0:00.95 bench
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.58 kworker/1:1H-kblockd
+  22057 root      19  -1  166712  98324  97124 S   1.0   1.2   0:19.68 systemd-journal
+ 214164 root      20   0       0      0      0 I   1.0   0.0   0:00.09 kworker/u8:3-events_unbound
+ 214735 www-data  20   0   58776  12172   7640 S   1.0   0.1   0:00.14 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852484 740676  37420 S  89.1   9.1   0:29.20 mysqld
+ 215058 isucon    20   0 3100708  45340  10856 S  24.8   0.6   0:06.68 main
+ 215080 isucon    20   0 1161376  29108  11304 S   7.9   0.4   0:01.03 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.79 jbd2/vda1-8
+ 113305 netdata   20   0   54384   5028   1980 S   2.0   0.1   7:50.37 apps.plugin
+ 214735 www-data  20   0   58776  12172   7640 S   2.0   0.1   0:00.16 nginx
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.34 netdata
+ 214780 isucon    20   0  729572  33132  22428 S   1.0   0.4   0:00.19 docker-compose
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852484 741996  37420 S 174.0   9.1   0:30.94 mysqld
+ 215058 isucon    20   0 3100708  43400  10856 S  34.0   0.5   0:07.02 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.81 jbd2/vda1-8
+ 215080 isucon    20   0 1161376  29356  11304 S   2.0   0.4   0:01.05 bench
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.59 kworker/1:1H-kblockd
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.26 dockerd
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.38 apps.plugin
+ 212310 netdata   20   0    4624   3392   2924 S   1.0   0.0   0:01.48 bash
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852484 743680  37420 S 176.2   9.1   0:32.72 mysqld
+ 215058 isucon    20   0 3100708  46160  10856 S  24.8   0.6   0:07.27 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.83 jbd2/vda1-8
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.60 kworker/1:1H-kblockd
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.35 netdata
+ 214766 root      20   0       0      0      0 I   1.0   0.0   0:00.09 kworker/u8:4-events_unbound
+ 215080 isucon    20   0 1161376  28728  11304 S   1.0   0.4   0:01.06 bench
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853512 744900  37420 S 178.0   9.1   0:34.50 mysqld
+ 215058 isucon    20   0 3100708  48856  10856 S  91.0   0.6   0:08.18 main
+ 215080 isucon    20   0 1161376  29760  11304 S   8.0   0.4   0:01.14 bench
+ 214735 www-data  20   0   58776  12172   7640 S   2.0   0.1   0:00.19 nginx
+     13 root      20   0       0      0      0 I   1.0   0.0   2:02.09 rcu_sched
+    306 root      20   0       0      0      0 R   1.0   0.0   0:27.84 jbd2/vda1-8
+  22057 root      19  -1  166712  98452  97252 S   1.0   1.2   0:19.69 systemd-journal
+  37835 isucon    20   0   29796  23428   3236 S   1.0   0.3   0:19.70 tmux: server
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852484 745364  37420 S 162.0   9.2   0:36.12 mysqld
+ 215058 isucon    20   0 3100840  48136  10856 S  66.0   0.6   0:08.84 main
+ 215080 isucon    20   0 1161376  30812  11304 S  20.0   0.4   0:01.34 bench
+ 214735 www-data  20   0   59932  13228   7640 S   8.0   0.2   0:00.27 nginx
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.86 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   2.0   1.3   1:46.28 dockerd
+ 113305 netdata   20   0   54384   5028   1980 S   2.0   0.1   7:50.40 apps.plugin
+    101 root       0 -20       0      0      0 I   1.0   0.0   0:03.30 kworker/0:1H-kblockd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853512 746796  37420 S 193.1   9.2   0:38.07 mysqld
+ 215058 isucon    20   0 3100840  55528  10856 S  86.1   0.7   0:09.71 main
+ 215080 isucon    20   0 1161376  31076  11304 S   2.0   0.4   0:01.36 bench
+    176 root       0 -20       0      0      0 R   1.0   0.0   0:03.25 kworker/2:1H+kblockd
+    306 root      20   0       0      0      0 D   1.0   0.0   0:27.87 jbd2/vda1-8
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.37 netdata
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.08 kthreadd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853512 748896  37420 S 228.0   9.2   0:40.35 mysqld
+ 215058 isucon    20   0 3100840  53756  10856 S  55.0   0.7   0:10.26 main
+ 215080 isucon    20   0 1161376  31600  11304 R   3.0   0.4   0:01.39 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.89 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.29 dockerd
+  22057 root      19  -1  166712  98552  97352 S   1.0   1.2   0:19.71 systemd-journal
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.41 apps.plugin
+ 214734 www-data  20   0   58228  11644   7640 S   1.0   0.1   0:00.06 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852484 753272  37420 S 177.2   9.3   0:42.14 mysqld
+ 215058 isucon    20   0 3100708  49428  10856 S  64.4   0.6   0:10.91 main
+ 215080 isucon    20   0 1161376  32644  11304 S   2.0   0.4   0:01.41 bench
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.61 kworker/1:1H-kblockd
+    306 root      20   0       0      0      0 D   1.0   0.0   0:27.90 jbd2/vda1-8
+   4463 root      20   0 1432684  50628  34752 S   1.0   0.6   5:08.83 containerd
+  22057 root      19  -1  166712  98584  97384 S   1.0   1.2   0:19.72 systemd-journal
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.38 netdata
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3854540 753724  37420 S 170.0   9.3   0:43.84 mysqld
+ 215058 isucon    20   0 3100708  51628  10856 S  41.0   0.6   0:11.32 main
+ 215080 isucon    20   0 1161376  33428  11304 S  11.0   0.4   0:01.52 bench
+ 214735 www-data  20   0   60180  13492   7640 S   3.0   0.2   0:00.32 nginx
+    306 root      20   0       0      0      0 R   1.0   0.0   0:27.91 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.30 dockerd
+  22057 root      19  -1  166712  98612  97412 S   1.0   1.2   0:19.73 systemd-journal
+  35023 redis     20   0   68252  11104   9132 S   1.0   0.1  13:51.83 redis-server
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853512 755904  37420 S 166.3   9.3   0:45.52 mysqld
+ 215058 isucon    20   0 3182668  53068  10856 S  42.6   0.7   0:11.75 main
+ 215080 isucon    20   0 1161376  32328  11304 S   5.9   0.4   0:01.58 bench
+    306 root      20   0       0      0      0 S   2.0   0.0   0:27.93 jbd2/vda1-8
+ 113094 netdata   20   0  356272 124152   8592 S   2.0   1.5   8:22.40 netdata
+ 214737 www-data  20   0   58724  11916   7640 S   2.0   0.1   0:00.10 nginx
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.26 kworker/2:1H-kblockd
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.31 dockerd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853512 759088  37420 S 211.0   9.3   0:47.63 mysqld
+ 215058 isucon    20   0 3182668  54184  10856 S  72.0   0.7   0:12.47 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.95 jbd2/vda1-8
+ 215080 isucon    20   0 1161376  32588  11304 S   2.0   0.4   0:01.60 bench
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.27 kworker/2:1H-kblockd
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.44 apps.plugin
+ 214735 www-data  20   0   60180  13492   7640 S   1.0   0.2   0:00.33 nginx
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853512 762692  37420 S 176.2   9.4   0:49.41 mysqld
+ 215058 isucon    20   0 3248236  57496  10856 S  27.7   0.7   0:12.75 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:27.97 jbd2/vda1-8
+ 214164 root      20   0       0      0      0 R   2.0   0.0   0:00.12 kworker/u8:3+flush-252:0
+ 215080 isucon    20   0 1161376  32576  11304 S   2.0   0.4   0:01.62 bench
+ 215093 isucon    20   0   26368  17448   6160 S   2.0   0.2   0:00.08 dstat
+    118 root       0 -20       0      0      0 I   1.0   0.0   0:03.39 kworker/3:1H-kblockd
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.41 netdata
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852484 762492  37420 S 129.0   9.4   0:50.70 mysqld
+ 215058 isucon    20   0 3248236  57496  10856 S   9.0   0.7   0:12.84 main
+ 214164 root      20   0       0      0      0 I   3.0   0.0   0:00.15 kworker/u8:3-events_unbound
+ 113305 netdata   20   0   54384   5028   1980 S   2.0   0.1   7:50.46 apps.plugin
+ 214766 root      20   0       0      0      0 I   2.0   0.0   0:00.13 kworker/u8:4-events_unbound
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.28 kworker/2:1H-kblockd
+ 213630 root      20   0       0      0      0 I   1.0   0.0   0:00.07 kworker/u8:2-events_freezable_power_
+ 215085 isucon    20   0   11524   3960   3352 R   1.0   0.0   0:00.15 top
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852484 765288  37420 R 161.4   9.4   0:52.33 mysqld
+ 215058 isucon    20   0 3248236  59020  10856 S  55.4   0.7   0:13.40 main
+ 215080 isucon    20   0 1161376  32840  11304 R  21.8   0.4   0:01.84 bench
+ 214735 www-data  20   0   60180  13492   7640 R   8.9   0.2   0:00.42 nginx
+    306 root      20   0       0      0      0 S   2.0   0.0   0:27.99 jbd2/vda1-8
+  22057 root      19  -1  166712  98800  97600 S   2.0   1.2   0:19.75 systemd-journal
+ 214780 isucon    20   0  729572  33132  22428 S   2.0   0.4   0:00.23 docker-compose
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.32 dockerd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852484 765692  37420 S  97.0   9.4   0:53.30 mysqld
+ 215058 isucon    20   0 3248236  56592  10856 S  25.0   0.7   0:13.65 main
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.29 kworker/2:1H-kblockd
+    306 root      20   0       0      0      0 D   1.0   0.0   0:28.00 jbd2/vda1-8
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.43 netdata
+ 113305 netdata   20   0   54384   5028   1980 R   1.0   0.1   7:50.47 apps.plugin
+ 212310 netdata   20   0    4624   3392   2924 S   1.0   0.0   0:01.49 bash
+ 214737 www-data  20   0   58724  11916   7640 S   1.0   0.1   0:00.11 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 767788  37420 S 100.0   9.4   0:54.31 mysqld
+ 215058 isucon    20   0 3248236  58524  10856 S  63.4   0.7   0:14.29 main
+ 215080 isucon    20   0 1161376  33364  11304 S   9.9   0.4   0:01.94 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.02 jbd2/vda1-8
+ 214734 www-data  20   0   58900  12172   7640 S   2.0   0.1   0:00.11 nginx
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.30 kworker/2:1H-kblockd
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.33 dockerd
+  22057 root      19  -1  166712  98908  97708 S   1.0   1.2   0:19.76 systemd-journal
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 768836  37420 S  90.0   9.4   0:55.21 mysqld
+ 215058 isucon    20   0 3248236  55280  10856 S  33.0   0.7   0:14.62 main
+    306 root      20   0       0      0      0 R   2.0   0.0   0:28.04 jbd2/vda1-8
+ 113094 netdata   20   0  356272 124152   8592 S   2.0   1.5   8:22.45 netdata
+     13 root      20   0       0      0      0 I   1.0   0.0   2:02.10 rcu_sched
+     32 root      20   0       0      0      0 S   1.0   0.0   0:00.65 ksoftirqd/3
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.34 dockerd
+  22057 root      19  -1  166712  98928  97728 S   1.0   1.2   0:19.77 systemd-journal
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 770156  37420 S  88.1   9.5   0:56.10 mysqld
+ 215058 isucon    20   0 3248236  57608  10856 S  32.7   0.7   0:14.95 main
+ 215080 isucon    20   0 1161376  34152  11304 S   3.0   0.4   0:01.98 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.06 jbd2/vda1-8
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.31 kworker/2:1H-kblockd
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.50 apps.plugin
+ 214164 root      20   0       0      0      0 R   1.0   0.0   0:00.16 kworker/u8:3-events_unbound
+ 214734 www-data  20   0   59080  12436   7640 S   1.0   0.2   0:00.12 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 770156  37420 S  91.0   9.5   0:57.01 mysqld
+ 215058 isucon    20   0 3248236  58048  10856 S  32.0   0.7   0:15.27 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.08 jbd2/vda1-8
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.46 netdata
+ 214735 www-data  20   0   60180  13492   7640 S   1.0   0.2   0:00.44 nginx
+ 214780 isucon    20   0  729572  33132  22428 S   1.0   0.4   0:00.24 docker-compose
+ 215080 isucon    20   0 1161376  34152  11304 S   1.0   0.4   0:01.99 bench
+      1 root      20   0  167740  13544   8612 S   0.0   0.2   0:25.51 systemd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 215058 isucon    20   0 3248236  56076  10856 S 143.6   0.7   0:16.72 main
+ 214853 mysql     20   0 3853516 770300  37420 S  83.2   9.5   0:57.85 mysqld
+ 215080 isucon    20   0 1161376  32176  11304 S   6.9   0.4   0:02.06 bench
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.32 kworker/2:1H-kblockd
+    306 root      20   0       0      0      0 S   1.0   0.0   0:28.09 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.35 dockerd
+  22057 root      19  -1  166712  99020  97820 S   1.0   1.2   0:19.78 systemd-journal
+  24804 syslog    20   0  222400   5120   4096 S   1.0   0.1   0:05.29 rsyslogd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 770256  37420 S 146.0   9.5   0:59.31 mysqld
+ 215058 isucon    20   0 3248236  53480  10856 S  78.0   0.7   0:17.50 main
+ 215080 isucon    20   0 1161376  32700  11304 S   2.0   0.4   0:02.08 bench
+    101 root       0 -20       0      0      0 I   1.0   0.0   0:03.31 kworker/0:1H-kblockd
+    306 root      20   0       0      0      0 D   1.0   0.0   0:28.10 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.36 dockerd
+  22057 root      19  -1  166712  99152  97952 S   1.0   1.2   0:19.79 systemd-journal
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.47 netdata
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 770312  37420 S 175.0   9.5   1:01.06 mysqld
+ 215058 isucon    20   0 3248236  54288  10856 S  88.0   0.7   0:18.38 main
+ 215080 isucon    20   0 1161376  34284  11304 S  16.0   0.4   0:02.24 bench
+ 214735 www-data  20   0   60180  13492   7640 S   5.0   0.2   0:00.50 nginx
+ 214736 www-data  20   0   58500  11912   7640 S   2.0   0.1   0:00.09 nginx
+    306 root      20   0       0      0      0 D   1.0   0.0   0:28.11 jbd2/vda1-8
+  22057 root      19  -1  166712  99220  98020 S   1.0   1.2   0:19.80 systemd-journal
+  35023 redis     20   0   68252  11316   9132 S   1.0   0.1  13:51.84 redis-server
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 770388  37420 S 177.2   9.5   1:02.85 mysqld
+ 215058 isucon    20   0 3248236  57388  10856 S  60.4   0.7   0:18.99 main
+ 215080 isucon    20   0 1235108  34284  11304 S   4.0   0.4   0:02.28 bench
+    306 root      20   0       0      0      0 R   1.0   0.0   0:28.12 jbd2/vda1-8
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.54 apps.plugin
+ 113306 netdata   20   0   72376  33544  10388 S   1.0   0.4   1:02.21 python.d.plugin
+ 214734 www-data  20   0   59080  12436   7640 S   1.0   0.2   0:00.14 nginx
+ 214736 www-data  20   0   58812  12176   7640 S   1.0   0.1   0:00.10 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 770464  37420 S 168.0   9.5   1:04.53 mysqld
+ 215058 isucon    20   0 3248236  62304  10856 S  89.0   0.8   0:19.88 main
+ 215080 isucon    20   0 1235108  34284  11304 S   3.0   0.4   0:02.31 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.14 jbd2/vda1-8
+ 215085 isucon    20   0   11524   3960   3352 R   2.0   0.0   0:00.20 top
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.33 kworker/2:1H-kblockd
+   4463 root      20   0 1432684  50888  34752 S   1.0   0.6   5:08.84 containerd
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.49 netdata
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 770476  37420 S 161.4   9.5   1:06.16 mysqld
+ 215058 isucon    20   0 3248368  61108  10856 S  82.2   0.8   0:20.71 main
+ 215080 isucon    20   0 1235364  35116  11304 S  26.7   0.4   0:02.58 bench
+ 214735 www-data  20   0   60424  13756   7640 S   9.9   0.2   0:00.61 nginx
+    306 root      20   0       0      0      0 R   2.0   0.0   0:28.16 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   2.0   1.3   1:46.38 dockerd
+  22057 root      19  -1  174904  99728  98528 S   2.0   1.2   0:19.82 systemd-journal
+ 214780 isucon    20   0  729572  33132  22428 S   2.0   0.4   0:00.27 docker-compose
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 770480  37420 S 175.0   9.5   1:07.91 mysqld
+ 215058 isucon    20   0 3248368  54624  10856 S 104.0   0.7   0:21.75 main
+ 215080 isucon    20   0 1235364  36168  11304 S   3.0   0.4   0:02.61 bench
+   4738 root      20   0 1765088 108684  60700 S   2.0   1.3   1:46.40 dockerd
+ 214736 www-data  20   0   58812  12176   7640 R   2.0   0.1   0:00.12 nginx
+  22057 root      19  -1  174904  99760  98560 S   1.0   1.2   0:19.83 systemd-journal
+  51153 isucon    20   0  101152  30684  29748 S   1.0   0.4   0:02.25 journalctl
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.56 apps.plugin
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 770636  37420 S 189.1   9.5   1:09.82 mysqld
+ 215058 isucon    20   0 3248368  56236  10856 S  71.3   0.7   0:22.47 main
+ 215080 isucon    20   0 1235364  36952  11304 S   5.0   0.5   0:02.66 bench
+    306 root      20   0       0      0      0 R   1.0   0.0   0:28.17 jbd2/vda1-8
+  22057 root      19  -1  174904  99860  98660 S   1.0   1.2   0:19.84 systemd-journal
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.51 netdata
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.57 apps.plugin
+ 214735 www-data  20   0   60812  14020   7640 S   1.0   0.2   0:00.63 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3854544 770704  37420 S 161.0   9.5   1:11.43 mysqld
+ 215058 isucon    20   0 3248368  56168  10856 S 109.0   0.7   0:23.56 main
+ 215080 isucon    20   0 1235364  38256  11304 S   8.0   0.5   0:02.74 bench
+    306 root      20   0       0      0      0 R   2.0   0.0   0:28.19 jbd2/vda1-8
+ 214734 www-data  20   0   59080  12436   7640 S   2.0   0.2   0:00.18 nginx
+    118 root       0 -20       0      0      0 I   1.0   0.0   0:03.41 kworker/3:1H-kblockd
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.41 dockerd
+  22057 root      19  -1  174904  99988  98788 S   1.0   1.2   0:19.85 systemd-journal
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 770736  37420 S 176.2   9.5   1:13.21 mysqld
+ 215058 isucon    20   0 3248236  61288  10856 S  81.2   0.8   0:24.38 main
+ 215080 isucon    20   0 1235364  38520  11304 S   6.9   0.5   0:02.81 bench
+ 214737 www-data  20   0   58724  12180   7640 S   2.0   0.1   0:00.17 nginx
+    306 root      20   0       0      0      0 R   1.0   0.0   0:28.20 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.42 dockerd
+  22057 root      19  -1  174904 100088  98888 S   1.0   1.2   0:19.86 systemd-journal
+  24804 syslog    20   0  222400   5120   4096 S   1.0   0.1   0:05.32 rsyslogd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3854544 771788  37420 S 178.0   9.5   1:14.99 mysqld
+ 215058 isucon    20   0 3297628  63116  10856 S  75.0   0.8   0:25.13 main
+ 215080 isucon    20   0 1235364  38420  11304 S   6.0   0.5   0:02.87 bench
+    306 root      20   0       0      0      0 S   2.0   0.0   0:28.22 jbd2/vda1-8
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.62 kworker/1:1H-kblockd
+  35023 redis     20   0   68252  11284   9132 S   1.0   0.1  13:51.85 redis-server
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.53 netdata
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.59 apps.plugin
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 772856  37420 S 172.3   9.5   1:16.73 mysqld
+ 215058 isucon    20   0 3305824  59016  10856 S  72.3   0.7   0:25.86 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.24 jbd2/vda1-8
+ 214734 www-data  20   0   59080  12436   7640 S   2.0   0.2   0:00.20 nginx
+     13 root      20   0       0      0      0 I   1.0   0.0   2:02.11 rcu_sched
+    101 root       0 -20       0      0      0 I   1.0   0.0   0:03.32 kworker/0:1H-kblockd
+  22057 root      19  -1  174904 100112  98912 S   1.0   1.2   0:19.87 systemd-journal
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.60 apps.plugin
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3851460 772904  37420 S 131.0   9.5   1:18.04 mysqld
+ 215058 isucon    20   0 3330412  58880  10856 S  84.0   0.7   0:26.70 main
+ 215080 isucon    20   0 1235364  36444  11304 S  13.0   0.4   0:03.00 bench
+ 214735 www-data  20   0   60812  14020   7640 S   3.0   0.2   0:00.69 nginx
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.26 jbd2/vda1-8
+    101 root       0 -20       0      0      0 I   1.0   0.0   0:03.33 kworker/0:1H-kblockd
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.43 dockerd
+  22057 root      19  -1  174904 100308  99108 R   1.0   1.2   0:19.88 systemd-journal
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 215058 isucon    20   0 3332016  59588  10856 S 113.9   0.7   0:27.85 main
+ 214853 mysql     20   0 3852488 775012  37420 S  51.5   9.5   1:18.56 mysqld
+ 215080 isucon    20   0 1235364  36444  11304 S   6.9   0.4   0:03.07 bench
+    306 root      20   0       0      0      0 R   2.0   0.0   0:28.28 jbd2/vda1-8
+    118 root       0 -20       0      0      0 I   1.0   0.0   0:03.42 kworker/3:1H-kblockd
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.44 dockerd
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.55 netdata
+ 212279 netdata   20   0    3040   1252   1136 S   1.0   0.0   0:00.12 nfacct.plugin
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 215058 isucon    20   0 3331932  59628  10856 S 103.0   0.7   0:28.88 main
+ 214853 mysql     20   0 3853516 774952  37420 S  97.0   9.5   1:19.53 mysqld
+ 215080 isucon    20   0 1235364  37232  11304 S  11.0   0.5   0:03.18 bench
+  22057 root      19  -1  174904 100572  99372 S   2.0   1.2   0:19.90 systemd-journal
+ 113305 netdata   20   0   54384   5028   1980 S   2.0   0.1   7:50.63 apps.plugin
+ 214734 www-data  20   0   59080  12436   7640 S   2.0   0.2   0:00.23 nginx
+ 214780 isucon    20   0  729572  32480  22492 S   2.0   0.4   0:00.32 docker-compose
+    306 root      20   0       0      0      0 D   1.0   0.0   0:28.29 jbd2/vda1-8
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852488 775780  37420 S 123.0   9.5   1:20.76 mysqld
+ 215058 isucon    20   0 3332196  59212  10856 S  86.0   0.7   0:29.74 main
+ 215080 isucon    20   0 1235364  37232  11304 S   3.0   0.5   0:03.21 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.31 jbd2/vda1-8
+ 214735 www-data  20   0   60812  14020   7640 S   2.0   0.2   0:00.73 nginx
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.63 kworker/1:1H-kblockd
+ 212424 root      20   0       0      0      0 I   1.0   0.0   0:00.07 kworker/2:1-ata_sff
+ 214737 www-data  20   0   58724  12180   7640 S   1.0   0.1   0:00.20 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 777076  37420 S  90.1   9.5   1:21.67 mysqld
+ 215058 isucon    20   0 3332196  62804  10856 S  65.3   0.8   0:30.40 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.33 jbd2/vda1-8
+    118 root       0 -20       0      0      0 I   1.0   0.0   0:03.43 kworker/3:1H-kblockd
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.46 dockerd
+  24804 syslog    20   0  222400   5120   4096 S   1.0   0.1   0:05.34 rsyslogd
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.57 netdata
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.64 apps.plugin
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3852488 778872  37420 S 108.0   9.6   1:22.75 mysqld
+ 215058 isucon    20   0 3348588  65680  10856 S  77.0   0.8   0:31.17 main
+ 215080 isucon    20   0 1235876  37496  11304 S   7.0   0.5   0:03.29 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.35 jbd2/vda1-8
+ 214736 www-data  20   0   58964  12176   7640 S   2.0   0.1   0:00.18 nginx
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.35 kworker/2:1H-kblockd
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.47 dockerd
+  22057 root      19  -1  174904 100776  99576 S   1.0   1.2   0:19.91 systemd-journal
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 215058 isucon    20   0 3348588  62456  10920 S 121.8   0.8   0:32.40 main
+ 214853 mysql     20   0 3852488 780832  37420 S 103.0   9.6   1:23.79 mysqld
+ 215080 isucon    20   0 1235876  38288  11304 S   5.0   0.5   0:03.34 bench
+    306 root      20   0       0      0      0 S   2.0   0.0   0:28.37 jbd2/vda1-8
+ 214735 www-data  20   0   60812  14020   7640 S   2.0   0.2   0:00.75 nginx
+ 214737 www-data  20   0   58724  12180   7640 S   2.0   0.1   0:00.22 nginx
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.36 kworker/2:1H-kblockd
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.48 dockerd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 780844  37420 S 140.0   9.6   1:25.19 mysqld
+ 215058 isucon    20   0 3347248  61716  10920 S  86.0   0.8   0:33.26 main
+ 215080 isucon    20   0 1235876  38288  11304 S   4.0   0.5   0:03.38 bench
+    306 root      20   0       0      0      0 S   2.0   0.0   0:28.39 jbd2/vda1-8
+  22057 root      19  -1  174904 100924  99724 S   1.0   1.2   0:19.93 systemd-journal
+  24804 syslog    20   0  222400   5120   4096 S   1.0   0.1   0:05.35 rsyslogd
+  35023 redis     20   0   68252  11244   9132 S   1.0   0.1  13:51.87 redis-server
+  37835 isucon    20   0   29808  23428   3236 S   1.0   0.3   0:19.76 tmux: server
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3854544 781264  37420 S 162.4   9.6   1:26.83 mysqld
+ 215058 isucon    20   0 3350036  61612  10920 S  92.1   0.8   0:34.19 main
+ 215080 isucon    20   0 1235876  37988  11304 S  25.7   0.5   0:03.64 bench
+ 214735 www-data  20   0   60812  14020   7640 R   9.9   0.2   0:00.85 nginx
+    306 root      20   0       0      0      0 S   2.0   0.0   0:28.41 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   2.0   1.3   1:46.50 dockerd
+  22057 root      19  -1  174904 101212 100012 R   2.0   1.2   0:19.95 systemd-journal
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.37 kworker/2:1H-kblockd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 782068  37420 S 177.0   9.6   1:28.60 mysqld
+ 215058 isucon    20   0 3346588  61264  10920 S  87.0   0.8   0:35.06 main
+ 215080 isucon    20   0 1235876  37988  11304 S   9.0   0.5   0:03.73 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.43 jbd2/vda1-8
+ 214735 www-data  20   0   60812  14020   7640 S   2.0   0.2   0:00.87 nginx
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.51 dockerd
+  22057 root      19  -1  174904 101336 100136 S   1.0   1.2   0:19.96 systemd-journal
+  24804 syslog    20   0  222400   5120   4096 S   1.0   0.1   0:05.36 rsyslogd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 782068  37420 S 155.4   9.6   1:30.17 mysqld
+ 215058 isucon    20   0 3428548  63264  10920 S  72.3   0.8   0:35.79 main
+ 215080 isucon    20   0 1235876  38248  11304 S   4.0   0.5   0:03.77 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.45 jbd2/vda1-8
+    118 root       0 -20       0      0      0 I   1.0   0.0   0:03.44 kworker/3:1H-kblockd
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.38 kworker/2:1H-kblockd
+  51153 isucon    20   0  101152  30684  29748 S   1.0   0.4   0:02.27 journalctl
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.61 netdata
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3854544 784176  37420 S 149.0   9.6   1:31.66 mysqld
+ 215058 isucon    20   0 3436916  67696  10984 S 110.0   0.8   0:36.89 main
+ 215080 isucon    20   0 1235876  39292  11304 S   3.0   0.5   0:03.80 bench
+    306 root      20   0       0      0      0 R   2.0   0.0   0:28.47 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   2.0   1.3   1:46.53 dockerd
+     13 root      20   0       0      0      0 I   1.0   0.0   2:02.12 rcu_sched
+  22057 root      19  -1  174904 101444 100244 S   1.0   1.2   0:19.97 systemd-journal
+  37835 isucon    20   0   29800  23428   3236 S   1.0   0.3   0:19.77 tmux: server
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 784148  37420 S 169.3   9.6   1:33.37 mysqld
+ 215058 isucon    20   0 3436916  65788  10984 S  96.0   0.8   0:37.86 main
+ 215080 isucon    20   0 1235876  40580  11304 S  13.9   0.5   0:03.94 bench
+ 214735 www-data  20   0   60812  14020   7640 S   6.9   0.2   0:00.95 nginx
+   4738 root      20   0 1765088 108684  60700 S   2.0   1.3   1:46.55 dockerd
+  22057 root      19  -1  174904 101608 100408 S   2.0   1.2   0:19.99 systemd-journal
+ 214734 www-data  20   0   59080  12436   7640 S   2.0   0.2   0:00.29 nginx
+ 214737 www-data  20   0   58724  12180   7640 S   2.0   0.1   0:00.25 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3854544 784148  37420 S 187.0   9.6   1:35.24 mysqld
+ 215058 isucon    20   0 3436916  63556  10984 S 119.0   0.8   0:39.05 main
+ 215080 isucon    20   0 1235876  41880  11304 S   7.0   0.5   0:04.01 bench
+     12 root      20   0       0      0      0 S   1.0   0.0   0:01.10 ksoftirqd/0
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.56 dockerd
+  22057 root      19  -1  174904 101796 100596 S   1.0   1.3   0:20.00 systemd-journal
+ 113305 netdata   20   0   54384   5028   1980 S   1.0   0.1   7:50.71 apps.plugin
+ 214735 www-data  20   0   60812  14020   7640 S   1.0   0.2   0:00.96 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3853516 784864  37420 S 161.0   9.6   1:36.85 mysqld
+ 215058 isucon    20   0 3436744  64548  10984 S 127.0   0.8   0:40.32 main
+ 215080 isucon    20   0 1235876  39992  11304 S  11.0   0.5   0:04.12 bench
+    306 root      20   0       0      0      0 S   2.0   0.0   0:28.50 jbd2/vda1-8
+ 214734 www-data  20   0   59080  12436   7640 S   2.0   0.2   0:00.31 nginx
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.57 dockerd
+  22057 root      19  -1  174904 101996 100796 S   1.0   1.3   0:20.01 systemd-journal
+  24804 syslog    20   0  222400   5120   4096 S   1.0   0.1   0:05.38 rsyslogd
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3854544 784900  37420 S 165.3   9.6   1:38.52 mysqld
+ 215058 isucon    20   0 3436828  64116  10984 S  84.2   0.8   0:41.17 main
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.52 jbd2/vda1-8
+ 215080 isucon    20   0 1235876  39992  11304 S   2.0   0.5   0:04.14 bench
+    176 root       0 -20       0      0      0 I   1.0   0.0   0:03.39 kworker/2:1H-kblockd
+  22057 root      19  -1  174904 102092 100892 S   1.0   1.3   0:20.02 systemd-journal
+ 214735 www-data  20   0   60812  14020   7640 S   1.0   0.2   0:00.97 nginx
+ 214737 www-data  20   0   58980  12180   7640 S   1.0   0.1   0:00.26 nginx
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3854544 784900  37420 S 174.0   9.6   1:40.26 mysqld
+ 215058 isucon    20   0 3453476  65060  10984 S  88.0   0.8   0:42.05 main
+ 215080 isucon    20   0 1235876  40772  11304 S   7.0   0.5   0:04.21 bench
+    306 root      20   0       0      0      0 D   2.0   0.0   0:28.54 jbd2/vda1-8
+ 113305 netdata   20   0   54384   5028   1980 S   2.0   0.1   7:50.74 apps.plugin
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.64 kworker/1:1H-kblockd
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.58 dockerd
+  22057 root      19  -1  174904 102172 100972 S   1.0   1.3   0:20.03 systemd-journal
+--
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 214853 mysql     20   0 3854544 784904  37420 S 199.0   9.6   1:42.27 mysqld
+ 215058 isucon    20   0 3453476  66024  10984 S  65.3   0.8   0:42.71 main
+ 215080 isucon    20   0 1235876  40772  11304 S   2.0   0.5   0:04.23 bench
+    200 root       0 -20       0      0      0 I   1.0   0.0   0:03.65 kworker/1:1H-kblockd
+    306 root      20   0       0      0      0 D   1.0   0.0   0:28.55 jbd2/vda1-8
+   4738 root      20   0 1765088 108684  60700 S   1.0   1.3   1:46.59 dockerd
+  23398 root      rt   0  289308  27096   9072 S   1.0   0.3   0:43.37 multipathd
+ 113094 netdata   20   0  356272 124152   8592 S   1.0   1.5   8:22.65 netdata

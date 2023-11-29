@@ -1,0 +1,21 @@
++--------+----------------------------------------------+---------+-------+-------+--------+-------+
+| METHOD |                     URI                      |   SUM   | COUNT |  MIN  |  MAX   |  AVG  |
++--------+----------------------------------------------+---------+-------+-------+--------+-------+
+| GET    | /api/player/competition/[0-9a-f]+/ranking    | 996.463 | 1039  | 0.036 | 9.624  | 0.959 |
+| GET    | /api/player/player/[0-9a-f]+                 | 816.454 | 1000  | 0.176 | 9.576  | 0.816 |
+| POST   | /api/organizer/competition/[0-9a-f]+/score   | 116.446 | 74    | 0.016 | 9.460  | 1.574 |
+| GET    | /api/admin/tenants/billing                   | 107.885 | 19    | 1.332 | 10.372 | 5.678 |
+| POST   | /api/organizer/players/add                   | 22.169  | 10    | 1.316 | 3.136  | 2.217 |
+| GET    | /api/player/competitions                     | 12.258  | 169   | 0.004 | 4.904  | 0.073 |
+| GET    | /api/organizer/billing                       | 5.492   | 30    | 0.004 | 2.000  | 0.183 |
+| POST   | /initialize                                  | 2.764   | 1     | 2.764 | 2.764  | 2.764 |
+| POST   | /api/organizer/competitions/add              | 0.876   | 54    | 0.008 | 0.032  | 0.016 |
+| POST   | /api/organizer/competition/[0-9a-f]+/finish  | 0.792   | 49    | 0.008 | 0.032  | 0.016 |
+| POST   | /api/admin/tenants/add                       | 0.392   | 11    | 0.088 | 0.096  | 0.036 |
+| POST   | /api/organizer/player/[0-9a-f]+/disqualified | 0.220   | 17    | 0.004 | 0.020  | 0.013 |
+| GET    | /api/organizer/players                       | 0.152   | 36    | 0.000 | 0.008  | 0.004 |
+| GET    | /api/organizer/competitions                  | 0.004   | 1     | 0.004 | 0.004  | 0.004 |
+| GET    | /css/app.83b4c321.css                        | 0.000   | 1     | 0.000 | 0.000  | 0.000 |
+| GET    | /js/app.3a4ec98c.js                          | 0.000   | 1     | 0.000 | 0.000  | 0.000 |
+| GET    | /index.html                                  | 0.000   | 1     | 0.000 | 0.000  | 0.000 |
++--------+----------------------------------------------+---------+-------+-------+--------+-------+
