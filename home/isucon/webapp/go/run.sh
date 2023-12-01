@@ -26,7 +26,7 @@ sudo rm -f /var/log/mysql/mysql-slow.log /var/log/nginx/access.log
 sudo systemctl restart isuports nginx mysql
 
 # /initialize を叩いて軽く動作確認
-sleep 1.5
+sleep 2
 curl -XPOST http://127.0.0.1:3000/initialize
 
 # 解析結果の出力先ディレクトリを準備
@@ -42,16 +42,16 @@ say 'benchmark'
 bench_pid=$!
 
 # topで計測開始
-setsid sh -c 'top -b -d1 | grep --line-buffered -w PID -A8 > /results/top.txt' &
+top -b -d1 > >( grep --line-buffered -w PID -A8 ) > /results/top.txt &
 top_pid=$!
-top_pgid=$(ps -o pgid= $top_pid | tr -d ' ')
 # dstatで計測開始
 dstat -tlamp > /results/dstat.txt &
 dstat_pid=$!
+
 # ベンチの終了を待機
 wait $bench_pid
-# top, dstat をプロセスグループごとkill
-kill -SIGTERM -$top_pgid $dstat_pid
+# top, dstatをkill
+kill $top_pid $dstat_pid
 
 # alpでアクセスログを解析
 say 'alp'
